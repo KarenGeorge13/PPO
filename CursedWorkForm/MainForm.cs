@@ -30,19 +30,9 @@ namespace CursedWorkForm
         }
         private void MoreKnowledge_Click(object sender, EventArgs e)
         {
-            DataGridViewRow row;
-            int index = -1;
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            if (dataGridView1.SelectedRows.Count != 0) 
             {
-                row = dataGridView1.Rows[i];
-                if (dataGridView1.SelectedRows.Contains(row))
-                {
-                    index = i;
-                    break;
-                }
-            }
-            if (index != -1)
-            {
+                int index = dataGridView1.SelectedRows[0].Index;
                 Drink d = Control.bindList.ElementAt(index);
                 ViewForm f = new ViewForm(d);
                 f.Show();
@@ -50,19 +40,9 @@ namespace CursedWorkForm
         }
         private void Change_Click(object sender, EventArgs e)
         {
-            DataGridViewRow row;
-            int index = -1;
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            if (dataGridView1.SelectedRows.Count != 0)
             {
-                row = dataGridView1.Rows[i];
-                if (dataGridView1.SelectedRows.Contains(row))
-                {
-                    index = i;
-                    break;
-                }
-            }
-            if (index != -1)
-            {
+                int index = dataGridView1.SelectedRows[0].Index;
                 Drink d = Control.bindList.ElementAt(index);
                 AddForm f = new AddForm(d, index);
                 f.Show();
@@ -70,15 +50,10 @@ namespace CursedWorkForm
         }
         private void Delete_Click(object sender, EventArgs e)
         {
-            DataGridViewRow row;
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            if (dataGridView1.SelectedRows.Count != 0)
             {
-                row = dataGridView1.Rows[i];
-                if (dataGridView1.SelectedRows.Contains(row))
-                {
-                    Control.Delete(i);
-                    break;
-                }
+                int index = dataGridView1.SelectedRows[0].Index;
+                Control.Delete(index);
             }
         }
         private void Add_Click(object sender, EventArgs e)

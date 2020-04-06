@@ -39,7 +39,11 @@ namespace CursedWorkForm
         {
             if (bindList.ElementAt(pos).getPath() != "")
             {
-                File.Delete(bindList.ElementAt(pos).getPath());
+                try
+                {
+                    File.Delete(bindList.ElementAt(pos).getPath());
+                }
+                catch { }
             }
             bindList.RemoveAt(pos);
         }
