@@ -18,8 +18,8 @@ namespace CursedWorkForm
         {
             InitializeComponent();
             path = "";
-            button1.Click += Button1_Click;
-            button2.Click += Button2_Click;
+            AddNote.Click += AddNote_Click;
+            AddPicture.Click += AddPicture_Click;
         }
         public AddForm(Drink d, int index)  
         {
@@ -28,11 +28,11 @@ namespace CursedWorkForm
             Iniz(d);
             if (path != "") 
             {
-                button2.Text = "Изменить картинку";
+                AddPicture.Text = "Изменить картинку";
             }
-            button1.Text = "Изменить";
-            button1.Click += Button1_Click1;
-            button2.Click += Button2_Click;
+            AddNote.Text = "Изменить";
+            AddNote.Click += AddNote_Click1;
+            AddPicture.Click += AddPicture_Click;
         }
         private void Iniz(Drink d) 
         {
@@ -43,7 +43,7 @@ namespace CursedWorkForm
             textBox5.Text = d.weight.ToString();
             path = d.getPath();
         }
-        private void Button1_Click1(object sender, EventArgs e)
+        private void AddNote_Click1(object sender, EventArgs e)
         {
 			label7.Visible = false;
 			Drink drink = fill();
@@ -53,7 +53,7 @@ namespace CursedWorkForm
 				this.Close();
 			}
         }
-        private void Button2_Click(object sender, EventArgs e)
+        private void AddPicture_Click(object sender, EventArgs e)
         {
             openFileDialog1.Filter = "Файлы изображений|*.png;*.jpg";
             if (openFileDialog1.ShowDialog() != DialogResult.OK)
@@ -89,9 +89,9 @@ namespace CursedWorkForm
                 }
             }
             img.Save(path);
-			button2.Text = "Изменить картинку";
+			AddPicture.Text = "Изменить картинку";
         }
-        private void Button1_Click(object sender, EventArgs e)
+        private void AddNote_Click(object sender, EventArgs e)
         {
             label7.Visible = false;
 			Drink drink = fill();
@@ -104,6 +104,7 @@ namespace CursedWorkForm
 				textBox4.Text = "";
 				textBox5.Text = "";
 				path = "";
+				AddPicture.Text = "Добавить картинку";
 			}
         }
 		private Drink fill()

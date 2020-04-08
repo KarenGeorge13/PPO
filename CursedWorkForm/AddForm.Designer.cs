@@ -38,8 +38,8 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.AddNote = new System.Windows.Forms.Button();
+            this.AddPicture = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -136,23 +136,23 @@
             this.textBox5.Size = new System.Drawing.Size(174, 26);
             this.textBox5.TabIndex = 10;
             // 
-            // button1
+            // AddNote
             // 
-            this.button1.Location = new System.Drawing.Point(105, 392);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 50);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Добавить";
-            this.button1.UseVisualStyleBackColor = true;
+            this.AddNote.Location = new System.Drawing.Point(105, 392);
+            this.AddNote.Name = "AddNote";
+            this.AddNote.Size = new System.Drawing.Size(150, 50);
+            this.AddNote.TabIndex = 12;
+            this.AddNote.Text = "Добавить";
+            this.AddNote.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // AddPicture
             // 
-            this.button2.Location = new System.Drawing.Point(94, 335);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(174, 35);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Добавить картинку";
-            this.button2.UseVisualStyleBackColor = true;
+            this.AddPicture.Location = new System.Drawing.Point(94, 335);
+            this.AddPicture.Name = "AddPicture";
+            this.AddPicture.Size = new System.Drawing.Size(174, 35);
+            this.AddPicture.TabIndex = 13;
+            this.AddPicture.Text = "Добавить картинку";
+            this.AddPicture.UseVisualStyleBackColor = true;
             // 
             // openFileDialog1
             // 
@@ -181,15 +181,15 @@
             this.comboBox1.Size = new System.Drawing.Size(174, 27);
             this.comboBox1.TabIndex = 0;
             // 
-            // Form2
+            // AddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(381, 501);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.AddPicture);
+            this.Controls.Add(this.AddNote);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -203,7 +203,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.Name = "Form2";
+            this.Name = "AddForm";
             this.Text = "Справочник сортов чай и кофе";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -221,8 +221,8 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button AddNote;
+        private System.Windows.Forms.Button AddPicture;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBox1;
