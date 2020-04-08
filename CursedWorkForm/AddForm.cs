@@ -31,21 +31,21 @@ namespace CursedWorkForm
                 AddPicture.Text = "Изменить картинку";
             }
             AddNote.Text = "Изменить";
-            AddNote.Click += AddNote_Click1;
+            AddNote.Click += ChangeNote_Click;
             AddPicture.Click += AddPicture_Click;
         }
         private void Iniz(Drink d) 
         {
-            comboBox1.Text = d.type;
-            textBox2.Text = d.grade;
-            textBox3.Text = d.hard;
-            textBox4.Text = d.price.ToString();
-            textBox5.Text = d.weight.ToString();
+            drinkTypeChose.Text = d.type;
+            drinkGrade.Text = d.grade;
+            drinkHard.Text = d.hard;
+            drinkPrice.Text = d.price.ToString();
+            drinkWeight.Text = d.weight.ToString();
             path = d.getPath();
         }
-        private void AddNote_Click1(object sender, EventArgs e)
+        private void ChangeNote_Click(object sender, EventArgs e)
         {
-			label7.Visible = false;
+			labelIncorrectInput.Visible = false;
 			Drink drink = fill();
 			if (drink != null)
 			{
@@ -55,13 +55,13 @@ namespace CursedWorkForm
         }
         private void AddPicture_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Файлы изображений|*.png;*.jpg";
-            if (openFileDialog1.ShowDialog() != DialogResult.OK)
+            searchPicture.Filter = "Файлы изображений|*.png;*.jpg";
+            if (searchPicture.ShowDialog() != DialogResult.OK)
                 return;
             Image img;//= new Bitmap(openFileDialog1.FileName);
             try
             {
-                img = Image.FromFile(openFileDialog1.FileName);
+                img = Image.FromFile(searchPicture.FileName);
             }
             catch (OutOfMemoryException ex)
             {
@@ -93,16 +93,16 @@ namespace CursedWorkForm
         }
         private void AddNote_Click(object sender, EventArgs e)
         {
-            label7.Visible = false;
+            labelIncorrectInput.Visible = false;
 			Drink drink = fill();
 			if (drink != null)
 			{
 				Control.Add(drink);
-				comboBox1.Text = "";
-				textBox2.Text = "";
-				textBox3.Text = "";
-				textBox4.Text = "";
-				textBox5.Text = "";
+				drinkTypeChose.Text = "";
+				drinkGrade.Text = "";
+				drinkHard.Text = "";
+				drinkPrice.Text = "";
+				drinkWeight.Text = "";
 				path = "";
 				AddPicture.Text = "Добавить картинку";
 			}
@@ -112,70 +112,70 @@ namespace CursedWorkForm
 			bool flag = true;
 			string type = "", grade = "", hard = "", picture_path;
 			double price = 0, weight = 0;
-			if (comboBox1.Text != "")
+			if (drinkTypeChose.Text != "")
 			{
-				label1.ForeColor = Color.Black;
-				type = comboBox1.Text;
+				labelDrinkType.ForeColor = Color.Black;
+				type = drinkTypeChose.Text;
 			}
 			else
 			{
-				label1.ForeColor = Color.Red;
+				labelDrinkType.ForeColor = Color.Red;
 				flag = false;
 			}
-			if (textBox2.Text != "")
+			if (drinkGrade.Text != "")
 			{
-				label2.ForeColor = Color.Black;
-				grade = textBox2.Text;
+				labelDrinkGrade.ForeColor = Color.Black;
+				grade = drinkGrade.Text;
 			}
 			else
 			{
-				label2.ForeColor = Color.Red;
+				labelDrinkGrade.ForeColor = Color.Red;
 				flag = false;
 			}
-			if (textBox3.Text != "")
+			if (drinkHard.Text != "")
 			{
-				label3.ForeColor = Color.Black;
-				hard = textBox3.Text;
+				labelDrinkHard.ForeColor = Color.Black;
+				hard = drinkHard.Text;
 			}
 			else
 			{
-				label3.ForeColor = Color.Red;
+				labelDrinkHard.ForeColor = Color.Red;
 				flag = false;
 			}
-			if (textBox4.Text != "")
+			if (drinkPrice.Text != "")
 			{
-				if (Double.TryParse(textBox4.Text, out price))
+				if (Double.TryParse(drinkPrice.Text, out price))
 				{
-					label4.ForeColor = Color.Black;
+					labelDrinkPrice.ForeColor = Color.Black;
 				}
 				else
 				{
-					label4.ForeColor = Color.Red;
-					label7.Visible = true;
+					labelDrinkPrice.ForeColor = Color.Red;
+					labelIncorrectInput.Visible = true;
 					flag = false;
 				}
 			}
 			else
 			{
-				label4.ForeColor = Color.Red;
+				labelDrinkPrice.ForeColor = Color.Red;
 				flag = false;
 			}
-			if (textBox5.Text != "")
+			if (drinkWeight.Text != "")
 			{
-				if (Double.TryParse(textBox5.Text, out weight))
+				if (Double.TryParse(drinkWeight.Text, out weight))
 				{
-					label5.ForeColor = Color.Black;
+					labelDrinkWeight.ForeColor = Color.Black;
 				}
 				else
 				{
-					label5.ForeColor = Color.Red;
-					label7.Visible = true;
+					labelDrinkWeight.ForeColor = Color.Red;
+					labelIncorrectInput.Visible = true;
 					flag = false;
 				}
 			}
 			else
 			{
-				label5.ForeColor = Color.Red;
+				labelDrinkWeight.ForeColor = Color.Red;
 				flag = false;
 			}
 			picture_path = path;

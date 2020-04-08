@@ -29,175 +29,175 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewForm));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.DrinkPictureBox = new System.Windows.Forms.PictureBox();
+            this.drinkWeight = new System.Windows.Forms.TextBox();
+            this.drinkPrice = new System.Windows.Forms.TextBox();
+            this.drinkHard = new System.Windows.Forms.TextBox();
+            this.drinkGrade = new System.Windows.Forms.TextBox();
+            this.drinkType = new System.Windows.Forms.TextBox();
+            this.labelDrinkWeight = new System.Windows.Forms.Label();
+            this.labelDrinkPrice = new System.Windows.Forms.Label();
+            this.labelDrinkHard = new System.Windows.Forms.Label();
+            this.labelDrinkGrade = new System.Windows.Forms.Label();
+            this.labelDrinkType = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.DrinkPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // DrinkPictureBox
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(393, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(300, 300);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.DrinkPictureBox.Location = new System.Drawing.Point(393, 20);
+            this.DrinkPictureBox.Name = "DrinkPictureBox";
+            this.DrinkPictureBox.Size = new System.Drawing.Size(300, 300);
+            this.DrinkPictureBox.TabIndex = 1;
+            this.DrinkPictureBox.TabStop = false;
             // 
-            // textBox5
+            // drinkWeight
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox5.Location = new System.Drawing.Point(186, 280);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(174, 19);
-            this.textBox5.TabIndex = 20;
+            this.drinkWeight.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.drinkWeight.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.drinkWeight.Location = new System.Drawing.Point(186, 280);
+            this.drinkWeight.Margin = new System.Windows.Forms.Padding(4);
+            this.drinkWeight.Name = "drinkWeight";
+            this.drinkWeight.ReadOnly = true;
+            this.drinkWeight.Size = new System.Drawing.Size(174, 19);
+            this.drinkWeight.TabIndex = 20;
             // 
-            // textBox4
+            // drinkPrice
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.Location = new System.Drawing.Point(186, 213);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(174, 19);
-            this.textBox4.TabIndex = 19;
+            this.drinkPrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.drinkPrice.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.drinkPrice.Location = new System.Drawing.Point(186, 213);
+            this.drinkPrice.Margin = new System.Windows.Forms.Padding(4);
+            this.drinkPrice.Name = "drinkPrice";
+            this.drinkPrice.ReadOnly = true;
+            this.drinkPrice.Size = new System.Drawing.Size(174, 19);
+            this.drinkPrice.TabIndex = 19;
             // 
-            // textBox3
+            // drinkHard
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.Location = new System.Drawing.Point(186, 146);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(174, 19);
-            this.textBox3.TabIndex = 18;
+            this.drinkHard.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.drinkHard.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.drinkHard.Location = new System.Drawing.Point(186, 146);
+            this.drinkHard.Margin = new System.Windows.Forms.Padding(4);
+            this.drinkHard.Name = "drinkHard";
+            this.drinkHard.ReadOnly = true;
+            this.drinkHard.Size = new System.Drawing.Size(174, 19);
+            this.drinkHard.TabIndex = 18;
             // 
-            // textBox2
+            // drinkGrade
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(186, 83);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(174, 19);
-            this.textBox2.TabIndex = 17;
+            this.drinkGrade.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.drinkGrade.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.drinkGrade.Location = new System.Drawing.Point(186, 83);
+            this.drinkGrade.Margin = new System.Windows.Forms.Padding(4);
+            this.drinkGrade.Name = "drinkGrade";
+            this.drinkGrade.ReadOnly = true;
+            this.drinkGrade.Size = new System.Drawing.Size(174, 19);
+            this.drinkGrade.TabIndex = 17;
             // 
-            // textBox1
+            // drinkType
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(186, 26);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(174, 19);
-            this.textBox1.TabIndex = 16;
+            this.drinkType.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.drinkType.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.drinkType.Location = new System.Drawing.Point(186, 26);
+            this.drinkType.Margin = new System.Windows.Forms.Padding(4);
+            this.drinkType.Name = "drinkType";
+            this.drinkType.ReadOnly = true;
+            this.drinkType.Size = new System.Drawing.Size(174, 19);
+            this.drinkType.TabIndex = 16;
             // 
-            // label5
+            // labelDrinkWeight
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(58, 284);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 19);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Вес г.:";
+            this.labelDrinkWeight.AutoSize = true;
+            this.labelDrinkWeight.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelDrinkWeight.Location = new System.Drawing.Point(58, 284);
+            this.labelDrinkWeight.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDrinkWeight.Name = "labelDrinkWeight";
+            this.labelDrinkWeight.Size = new System.Drawing.Size(48, 19);
+            this.labelDrinkWeight.TabIndex = 15;
+            this.labelDrinkWeight.Text = "Вес г.:";
             // 
-            // label4
+            // labelDrinkPrice
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(59, 217);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 19);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Цена р.:";
+            this.labelDrinkPrice.AutoSize = true;
+            this.labelDrinkPrice.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelDrinkPrice.Location = new System.Drawing.Point(59, 217);
+            this.labelDrinkPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDrinkPrice.Name = "labelDrinkPrice";
+            this.labelDrinkPrice.Size = new System.Drawing.Size(62, 19);
+            this.labelDrinkPrice.TabIndex = 14;
+            this.labelDrinkPrice.Text = "Цена р.:";
             // 
-            // label3
+            // labelDrinkHard
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(58, 149);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 19);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Терпкость:";
+            this.labelDrinkHard.AutoSize = true;
+            this.labelDrinkHard.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelDrinkHard.Location = new System.Drawing.Point(58, 149);
+            this.labelDrinkHard.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDrinkHard.Name = "labelDrinkHard";
+            this.labelDrinkHard.Size = new System.Drawing.Size(79, 19);
+            this.labelDrinkHard.TabIndex = 13;
+            this.labelDrinkHard.Text = "Терпкость:";
             // 
-            // label2
+            // labelDrinkGrade
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(58, 91);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 19);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Сорт:";
+            this.labelDrinkGrade.AutoSize = true;
+            this.labelDrinkGrade.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelDrinkGrade.Location = new System.Drawing.Point(58, 91);
+            this.labelDrinkGrade.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDrinkGrade.Name = "labelDrinkGrade";
+            this.labelDrinkGrade.Size = new System.Drawing.Size(46, 19);
+            this.labelDrinkGrade.TabIndex = 12;
+            this.labelDrinkGrade.Text = "Сорт:";
             // 
-            // label1
+            // labelDrinkType
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(58, 30);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 19);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Тип напитка:";
+            this.labelDrinkType.AutoSize = true;
+            this.labelDrinkType.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelDrinkType.Location = new System.Drawing.Point(58, 30);
+            this.labelDrinkType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDrinkType.Name = "labelDrinkType";
+            this.labelDrinkType.Size = new System.Drawing.Size(98, 19);
+            this.labelDrinkType.TabIndex = 11;
+            this.labelDrinkType.Text = "Тип напитка:";
             // 
-            // Form3
+            // ViewForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(725, 348);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.drinkWeight);
+            this.Controls.Add(this.drinkPrice);
+            this.Controls.Add(this.drinkHard);
+            this.Controls.Add(this.drinkGrade);
+            this.Controls.Add(this.drinkType);
+            this.Controls.Add(this.labelDrinkWeight);
+            this.Controls.Add(this.labelDrinkPrice);
+            this.Controls.Add(this.labelDrinkHard);
+            this.Controls.Add(this.labelDrinkGrade);
+            this.Controls.Add(this.labelDrinkType);
+            this.Controls.Add(this.DrinkPictureBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Form3";
+            this.Name = "ViewForm";
             this.Text = "Справочник сортов чай и кофе";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DrinkPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox DrinkPictureBox;
+        private System.Windows.Forms.TextBox drinkWeight;
+        private System.Windows.Forms.TextBox drinkPrice;
+        private System.Windows.Forms.TextBox drinkHard;
+        private System.Windows.Forms.TextBox drinkGrade;
+        private System.Windows.Forms.TextBox drinkType;
+        private System.Windows.Forms.Label labelDrinkWeight;
+        private System.Windows.Forms.Label labelDrinkPrice;
+        private System.Windows.Forms.Label labelDrinkHard;
+        private System.Windows.Forms.Label labelDrinkGrade;
+        private System.Windows.Forms.Label labelDrinkType;
     }
 }

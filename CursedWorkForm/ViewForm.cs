@@ -19,20 +19,20 @@ namespace CursedWorkForm
         }
         private void TextFull(Drink d) 
         {
-            textBox1.Text = d.type;
-            textBox2.Text = d.grade;
-            textBox3.Text = d.hard;
-            textBox4.Text = d.price.ToString();
-            textBox5.Text = d.weight.ToString();
+            drinkType.Text = d.type;
+            drinkGrade.Text = d.grade;
+            drinkHard.Text = d.hard;
+            drinkPrice.Text = d.price.ToString();
+            drinkWeight.Text = d.weight.ToString();
             try
             {
                 Image img = new Bitmap(new Bitmap(d.getPath()), 300, 300);
-                pictureBox1.Image = img;
+                DrinkPictureBox.Image = img;
             }
             catch (Exception e)
             {
                 Image img = new Bitmap(new Bitmap("image\\banned.png"), 300, 300);
-                pictureBox1.Image = img;
+                DrinkPictureBox.Image = img;
                 return;
             }
         }

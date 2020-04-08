@@ -15,14 +15,14 @@ namespace CursedWorkForm
         public MainForm()
         {
             InitializeComponent();
-            dataGridView1.DataSource = Control.bindList;
+            drinkDataGriedView.DataSource = Control.bindList;
             this.FormClosing += Save_Click;
             DGVset();
             Add.Click += Add_Click;
             Delete.Click += Delete_Click;
             Change.Click += Change_Click;
             Save.Click += Save_Click;
-            dataGridView1.RowHeaderMouseDoubleClick += MoreKnowledge_Click;
+            drinkDataGriedView.RowHeaderMouseDoubleClick += MoreKnowledge_Click;
         }
         private void Save_Click(object sender, EventArgs e)
         {
@@ -30,9 +30,9 @@ namespace CursedWorkForm
         }
         private void MoreKnowledge_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count != 0) 
+            if (drinkDataGriedView.SelectedRows.Count != 0) 
             {
-                int index = dataGridView1.SelectedRows[0].Index;
+                int index = drinkDataGriedView.SelectedRows[0].Index;
                 Drink d = Control.bindList.ElementAt(index);
                 ViewForm f = new ViewForm(d);
                 f.Show();
@@ -40,9 +40,9 @@ namespace CursedWorkForm
         }
         private void Change_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count != 0)
+            if (drinkDataGriedView.SelectedRows.Count != 0)
             {
-                int index = dataGridView1.SelectedRows[0].Index;
+                int index = drinkDataGriedView.SelectedRows[0].Index;
                 Drink d = Control.bindList.ElementAt(index);
                 AddForm f = new AddForm(d, index);
                 f.Show();
@@ -50,9 +50,9 @@ namespace CursedWorkForm
         }
         private void Delete_Click(object sender, EventArgs e)
         {
-            if (dataGridView1.SelectedRows.Count != 0)
+            if (drinkDataGriedView.SelectedRows.Count != 0)
             {
-                int index = dataGridView1.SelectedRows[0].Index;
+                int index = drinkDataGriedView.SelectedRows[0].Index;
                 Control.Delete(index);
             }
         }
@@ -63,15 +63,15 @@ namespace CursedWorkForm
         }
         private void DGVset()
         {
-            dataGridView1.Columns[0].HeaderCell.Value = "Тип";
-            dataGridView1.Columns[1].HeaderCell.Value = "Сорт";
-            dataGridView1.Columns[2].HeaderCell.Value = "Терпкость";
-            dataGridView1.Columns[3].HeaderCell.Value = "Цена";
-            dataGridView1.Columns[4].HeaderCell.Value = "Вес";
-            dataGridView1.RowHeadersWidth = 58;
-            for (int i = 0; i < dataGridView1.Columns.Count; i++) 
+            drinkDataGriedView.Columns[0].HeaderCell.Value = "Тип";
+            drinkDataGriedView.Columns[1].HeaderCell.Value = "Сорт";
+            drinkDataGriedView.Columns[2].HeaderCell.Value = "Терпкость";
+            drinkDataGriedView.Columns[3].HeaderCell.Value = "Цена";
+            drinkDataGriedView.Columns[4].HeaderCell.Value = "Вес";
+            drinkDataGriedView.RowHeadersWidth = 58;
+            for (int i = 0; i < drinkDataGriedView.Columns.Count; i++) 
             {
-                dataGridView1.Columns[i].Width = 150;
+                drinkDataGriedView.Columns[i].Width = 150;
             }
         
         }
